@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body{
+
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside main";
+    grid-template-rows: 50px calc(100vh - 50px);
+    grid-template-columns: 200px;
+}
+
+
+header{
+ 
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px 10px 10px;
+}
+
+.center{
+    border: 1px solid rgba(0,0,0, .2);
+    width: 200px;
+    height: 20px;
+    text-align: right;
+
+    
+}
+.center i{
+    
+    background-color: antiquewhite;
+    padding:2px;
+    border-left: 1px solid rgba(0,0,0, .2);
+}
+
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 10px;
+    
+}
+
+
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+aside{
+   
+    grid-area: aside;
+}
+
+.menu-item{
+    display: flex;
+    margin: 10px auto 15px 18px;
+    gap: 10px;
+    
+    
+}
+
+main{
+  
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "video video video video video";
+     margin-top: 10px;
+     margin-right: 100;
+     gap: 20px;
+}
+
+
+
+.video img{
+    width: 220px;
+    
+}
+
+.content{
+
+
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+    
+     
+}
+
+.content img{
+    width: 30px;
+    height: 100%;
+    
+}
+
+.content p{
+    font-size: 10px;
+    
+    
+}
+
+span{
+    font-weight: bold ;
+    
+}
